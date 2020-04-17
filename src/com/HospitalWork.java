@@ -14,12 +14,12 @@ import javax.ws.rs.core.MediaType;
 
 import com.Hospital;
 
-@Path("/Hospital")
+@Path("/")
 public class HospitalWork {
 	Hospital hospitalObj = new Hospital();
 
 	@GET
-	@Path("/get")
+	@Path("/get-hospitals")
 	@Produces(MediaType.TEXT_HTML)
 	public String readItems() {
 		return hospitalObj.readItems();
